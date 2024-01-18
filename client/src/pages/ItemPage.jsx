@@ -131,7 +131,12 @@ const ItemPage = () => {
           Add Item
         </Button>
       </div>
-      <Table columns={columns} dataSource={itemsData} bordered />
+      <Table
+        columns={columns}
+        dataSource={itemsData}
+        bordered
+        pagination={false}
+      />
 
       {popupModal && (
         <Modal

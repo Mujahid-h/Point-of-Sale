@@ -40,13 +40,13 @@ const RegisterPage = () => {
           <h3>Register Page</h3>
           <Form layout="vertical" onFinish={handleSubmit}>
             <Form.Item name="name" label="Name">
-              <Input />
+              <Input required />
             </Form.Item>
             <Form.Item name="userId" label="User ID">
-              <Input />
+              <Input required />
             </Form.Item>
             <Form.Item name="password" label="Password">
-              <Input type="password" />
+              <Input type="password" required />
             </Form.Item>
 
             <div className="d-flex justify-content-between">

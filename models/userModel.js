@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// creating Schema
 const userSchema = mongoose.Schema(
   {
     name: {
@@ -18,8 +17,17 @@ const userSchema = mongoose.Schema(
     verified: {
       type: Boolean,
     },
+    googleId: {
+      type: String,
+    },
+    googleDisplayName: {
+      type: String,
+    },
+    googleEmail: {
+      type: String,
+    },
   },
-  { timestamp: true }
+  { timestamps: true }
 );
 
 const Users = mongoose.model("Users", userSchema);

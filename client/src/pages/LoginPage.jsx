@@ -3,6 +3,7 @@ import { Button, Form, Input, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch } from "react-redux";
+import "../styles/AuthStyles.css";
 
 const LoginPage = () => {
   // states
@@ -46,8 +47,14 @@ const LoginPage = () => {
               <Input type="password" />
             </Form.Item>
 
-            <div className="d-flex justify-content-between">
-              <p>
+            <a href="/api/auth/google">
+              <button className="login-with-google-btn">
+                Login with Google
+              </button>
+            </a>
+
+            <div className="d-flex justify-content-between align-items-center">
+              <p style={{ marginBottom: "0" }}>
                 not a user Please
                 <Link to="/register"> Register Here !</Link>
               </p>

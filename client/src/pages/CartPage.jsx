@@ -120,11 +120,16 @@ const CartPage = () => {
 
   return (
     <DefaultLayout>
-      <Table columns={columns} dataSource={cartItems} bordered />
+      <Table
+        columns={columns}
+        dataSource={cartItems}
+        bordered
+        pagination={false}
+      />
       <div className="d-flex align-items-end flex-column">
         <hr />
         <h3>
-          SUB TOTAL: <b>${subTotal}/-</b>
+          SUB TOTAL: <b>RS{subTotal}/-</b>
         </h3>
         <Button type="primary" onClick={() => setBillPopup(true)}>
           Create Invoice
@@ -154,10 +159,14 @@ const CartPage = () => {
           <div className="d-flex justify-content-between">
             <div className="bill-item">
               <h5>
-                SUB TOTAL: <b>${subTotal}/-</b>
+                SUB TOTAL: <b>RS{subTotal}/-</b>
               </h5>
               <h5>
-                TAX: <b>${((subTotal / 100) * 10).toFixed(2)}/-</b>
+                TAX:{" "}
+                <b>
+                  RS
+                  {((subTotal / 100) * 10).toFixed(2)}/-
+                </b>
               </h5>
               <h4>
                 GRAND TOTAL:{" "}
