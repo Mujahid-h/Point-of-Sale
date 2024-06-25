@@ -8,7 +8,7 @@ const billSchema = mongoose.Schema(
       required: true,
     },
     customerContact: {
-      type: Number,
+      type: String,
       required: true,
     },
     totalAmount: {
