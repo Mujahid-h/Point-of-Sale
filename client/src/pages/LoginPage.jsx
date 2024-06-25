@@ -47,12 +47,6 @@ const LoginPage = () => {
               <Input type="password" />
             </Form.Item>
 
-            <a href="/api/auth/google">
-              <button className="login-with-google-btn">
-                Login with Google
-              </button>
-            </a>
-
             <div className="d-flex justify-content-between align-items-center">
               <p style={{ marginBottom: "0" }}>
                 not a user Please

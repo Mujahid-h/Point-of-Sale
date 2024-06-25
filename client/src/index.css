@@ -89,3 +89,26 @@ body {
   color: rgb(4, 4, 113);
   text-align: center;
 }
+/* Hide the scrollbar track */
+*::-webkit-scrollbar {
+  width: 8px; /* Adjust width for a thinner scrollbar */
+  height: 8px; /* Adjust height if needed */
+}
+
+/* Style the scrollbar handle */
+*::-webkit-scrollbar-thumb {
+  background: #a6a2a2c7; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Round corners for a sleek look */
+}
+
+/* Style the scrollbar handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #a9a7a7; /* Darker color on hover for better visibility */
+}
+
+/* Optional: Style the scrollbar track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 4px; /* Round corners for the track */
+  margin: 4px; /* Add margin to avoid the scrollbar sticking to the edges */
+}

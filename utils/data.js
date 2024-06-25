@@ -31,7 +31,8 @@ const items = [
     name: "Chicken Hakka",
     price: 250,
     category: "chineese",
-    image: "https://cravecookclick.com/wp-content/uploads/2012/07/IMG_4400.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yfDKJrm7SF9oI1pRKCDdB2M3LGbdvMoGJA&usqp=CAU",
   },
   {
     name: "Eggy",

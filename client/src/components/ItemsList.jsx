@@ -17,7 +17,7 @@ const ItemsList = ({ item }) => {
   return (
     <>
       <Card
-        style={{ width: 240, margin: "20px" }}
+        style={{ width: 240, margin: "20px", border: "1px solid seagreen" }}
         cover={
           <img alt={item.name} src={item.image} style={{ height: "200px" }} />
         }

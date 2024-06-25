@@ -65,7 +65,7 @@ const HomePage = () => {
 
   return (
     <DefaultLayout>
-      <div className="d-flex justify-content-center mb-3">
+      <div className="d-flex justify-content-center mb-3 ">
         <Select
           style={{ width: 200, marginRight: 16 }}
           placeholder="Select a category"
@@ -87,7 +87,7 @@ const HomePage = () => {
       </div>
       <Row gutter={[16, 16]}>
         {filteredItems.map((item) => (
-          <Col xs={24} lg={6} md={12} sm={6} key={item.id}>
+          <Col xs={24} lg={8} md={12} sm={6} key={item.id}>
             <ItemsList item={item} />
           </Col>
         ))}
